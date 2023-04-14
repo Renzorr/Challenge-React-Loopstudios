@@ -1,0 +1,27 @@
+article {
+  max-width: 650px;
+  padding: 36px 40px 25px;
+  margin-top: 130px;
+  border: 2px solid white;
+
+  h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 71.2px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: white;
+  }
+}
+
+@media (max-width: 640px) {
+  article {
+    width: 100%;
+    max-width: fit-content !important;
+    padding: 40px 10px;
+
+    h1 {
+      font-size: 44px;
+    }
+  }
+}

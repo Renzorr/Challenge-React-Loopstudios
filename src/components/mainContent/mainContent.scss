@@ -1,0 +1,56 @@
+main {
+  position: relative;
+  margin-block: 120px;
+
+  img {
+    z-index: 1;
+  }
+
+  .main-content {
+    width: 100%;
+    max-width: 542px;
+    position: absolute;
+    bottom: 0.5%;
+    right: 0;
+    z-index: 99;
+    padding: 94px 0px 0px 88px;
+    min-height: 315px;
+    background-color: white;
+
+    h2 {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 48px;
+      text-transform: uppercase;
+      font-weight: 100;
+    }
+
+    p {
+      font-size: 14.72px;
+      color: hsl(0, 0%, 55%);
+      padding-top: 25px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media (max-width: 1110px) {
+  main {
+    text-align: center;
+  }
+
+  .main-content {
+    max-width: initial !important;
+    position: initial !important;
+    padding: 50px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  main {
+    .main-content {
+      h2 {
+        font-size: 35px;
+      }
+    }
+  }
+}

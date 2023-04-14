@@ -1,10 +1,9 @@
 import Media from "react-media";
 import "./grid.scss";
-
 const galleryObj = [
   {
     id: 1,
-    ImageAddress: "../../../../images/desktop/image-deep-earth.jpg",
+    ImageAddress: "images/desktop/image-deep-earth.jpg",
     ImageAddressMobile: "../../../../images/mobile/image-deep-earth.jpg",
     ImageName: "DEEP EARTH",
   },
@@ -40,14 +39,14 @@ const galleryObj = [
   },
   {
     id: 7,
-    ImageAddress: "/images/desktop/image-curiosity.jpg",
-    ImageAddressMobile: "/images/mobile/image-curiosity.jpg",
+    ImageAddress: "../../../../images/desktop/image-curiosity.jpg",
+    ImageAddressMobile: "../../../../images/mobile/image-curiosity.jpg",
     ImageName: "THE CURIOSITY ",
   },
   {
     id: 8,
-    ImageAddress: "/images/desktop/image-fisheye.jpg",
-    ImageAddressMobile: "/images/mobile/image-fisheye.jpg",
+    ImageAddress: "../../../../images/desktop/image-fisheye.jpg",
+    ImageAddressMobile: "../../../../images/mobile/image-fisheye.jpg",
     ImageName: "MAKE IT FISHEYE ",
   },
 ];

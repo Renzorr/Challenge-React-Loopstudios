@@ -1,9 +1,10 @@
 import Media from "react-media";
 import "./grid.scss";
+import IMagen from "../../../../images/desktop/image-deep-earth.jpg";
 const galleryObj = [
   {
     id: 1,
-    ImageAddress: "images/desktop/image-deep-earth.jpg",
+    ImageAddress: "../../../../images/desktop/image-deep-earth.jpg",
     ImageAddressMobile: "../../../../images/mobile/image-deep-earth.jpg",
     ImageName: "DEEP EARTH",
   },
@@ -57,7 +58,7 @@ function Desktop() {
       {galleryObj.map((e) => {
         return (
           <div className="cart" key={e.id}>
-            <img src={e.ImageAddress} alt={`${e.ImageName}`} />
+            <img src={IMagen} alt={`${e.ImageName}`} />
             <p className="title">{e.ImageName}</p>
           </div>
         );

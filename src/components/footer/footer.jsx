@@ -1,31 +1,43 @@
+import { motion } from "framer-motion";
+import { footerVariants } from "../../../utils/motion";
+
 import Logo from "../../../images/logo.svg";
 import "./footer.scss";
+import Facebook from "../../../images/icon-facebook.svg";
+import Pinterest from "../../../images/icon-pinterest.svg";
+import Instagram from "../../../images/icon-instagram.svg";
+import Twitter from "../../../images/icon-twitter.svg";
+
 const socialObj = [
   {
     id: 1,
-    Image: "../../../../images/icon-facebook.svg",
+    Image: Facebook,
     ImageName: "facebook",
   },
   {
     id: 2,
-    Image: "../../../../images/icon-twitter.svg",
+    Image: Twitter,
     ImageName: "twitter",
   },
   {
     id: 3,
-    Image: "../../../../images/icon-pinterest.svg",
+    Image: Pinterest,
     ImageName: "pinterest",
   },
   {
     id: 4,
-    Image: "../../../../images/icon-instagram.svg",
+    Image: Instagram,
     ImageName: "instagram",
   },
 ];
 
 export default function Footer() {
   return (
-    <footer>
+    <motion.footer
+      variants={footerVariants}
+      initial={"hidden"}
+      whileInView={"show"}
+    >
       <div className="container footer-container">
         <div className="left">
           <img src={Logo} alt="logo" />
@@ -72,6 +84,6 @@ export default function Footer() {
           <p>© 2021 Loopstudios. All rights reserved.</p>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }

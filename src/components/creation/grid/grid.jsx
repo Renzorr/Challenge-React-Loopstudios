@@ -18,6 +18,9 @@ import CuriosityMobile from "../../../../images/mobile/image-curiosity.jpg";
 import MakeImg from "../../../../images/desktop/image-fisheye.jpg";
 import MakeMobile from "../../../../images/mobile/image-fisheye.jpg";
 
+import { motion } from "framer-motion";
+import { slideIn } from "../../../../utils/motion";
+
 const galleryObj = [
   {
     id: 1,
@@ -74,10 +77,14 @@ function Desktop() {
     <div className="grid">
       {galleryObj.map((e) => {
         return (
-          <div className="cart" key={e.id}>
+          <motion.div
+            variants={slideIn("up", "tween", 0.2, 1)}
+            className="cart"
+            key={e.id}
+          >
             <img src={e.ImageAddress} alt={`${e.ImageName}`} />
             <p className="title">{e.ImageName}</p>
-          </div>
+          </motion.div>
         );
       })}
     </div>

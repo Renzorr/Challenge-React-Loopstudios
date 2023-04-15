@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { navVariants } from "../../../../utils/motion";
 import { useState } from "react";
 import menu from "../../../../images/icon-hamburger.svg";
 import closeMenu from "../../../../images/icon-close.svg";
@@ -12,8 +14,13 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="container">
-      <img src={Logo} alt="logo"  className="logo"/>
+    <motion.nav
+      variants={navVariants}
+      initial={"hidden"}
+      animate={"show"}
+      className="container"
+    >
+      <img src={Logo} alt="logo" className="logo" />
       <ul className={open}>
         <button onClick={navToggle} className="close">
           <img src={closeMenu} alt="close menu icon" />
@@ -47,6 +54,6 @@ export default function Navbar() {
       <button onClick={navToggle} className="menu">
         <img src={menu} alt="icon menu" />
       </button>
-    </nav>
+    </motion.nav>
   );
 }

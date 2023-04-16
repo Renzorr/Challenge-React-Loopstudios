@@ -21,7 +21,7 @@ export default function Creation() {
           Our Creations
         </motion.h3>
         <motion.button
-          variants={fadeIn("left", "tween", 0, 1)}
+          variants={fadeIn("left", "tween", 0.2, 1)}
           className="see-all"
         >
           See all
@@ -29,7 +29,7 @@ export default function Creation() {
       </div>
       <Grid></Grid>
       <motion.button
-        variants={fadeIn("left", "tween", 0, 1)}
+        variants={fadeIn("left", "tween", 0.2, 1)}
         className="see-all-mobile"
       >
         See all

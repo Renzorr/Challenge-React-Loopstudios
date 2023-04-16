@@ -1,10 +1,6 @@
 import Img from "../../../images/desktop/image-interactive.jpg";
 import { motion } from "framer-motion";
-import {
-  staggerContainer,
-  fadeIn,
-  imgVariants,
-} from "../../../utils/motion";
+import { staggerContainer, fadeIn } from "../../../utils/motion";
 import "./mainContent.scss";
 
 export default function Maincontent() {
@@ -17,7 +13,7 @@ export default function Maincontent() {
       className="container"
     >
       <motion.img
-        variants={imgVariants("left")}
+        variants={fadeIn("right", "tween", 0.2, 1)}
         src={Img}
         alt="a man wearing vr head"
       />

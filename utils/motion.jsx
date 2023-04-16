@@ -101,10 +101,10 @@ export const imgVariants = (direction) => ({
 export const footerVariants = {
   hidden: {
     opacity: 0,
-    y: 50,
+    y: 30,
     transition: {
-      type: "spring",
-      stiffness: 30,
+      type: "tween",
+      stiffness: 250,
     },
   },
   show: {
@@ -112,7 +112,7 @@ export const footerVariants = {
     y: 0,
     transition: {
       type: "spring",
-      stiffness: 30,
+      stiffness: 100,
     },
   },
 };

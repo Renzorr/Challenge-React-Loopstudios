@@ -96,10 +96,14 @@ function Mobile() {
     <div className="grid">
       {galleryObj.map((e) => {
         return (
-          <div className="cart" key={e.id}>
+          <motion.div
+            variants={slideIn("up", "tween", 0.2, 1)}
+            className="cart"
+            key={e.id}
+          >
             <img src={e.ImageAddressMobile} alt={`${e.ImageName}`} />
             <p className="title">{e.ImageName}</p>
-          </div>
+          </motion.div>
         );
       })}
     </div>

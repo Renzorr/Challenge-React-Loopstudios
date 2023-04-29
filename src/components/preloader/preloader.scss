@@ -1,0 +1,15 @@
+.blinder-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.blinder {
+  background-color: black;
+  height: 100vh;
+  flex: 1;
+  transform-origin: top;
+  z-index: 999;
+}

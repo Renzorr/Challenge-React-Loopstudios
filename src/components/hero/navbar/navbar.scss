@@ -19,18 +19,15 @@ nav {
     font-size: 15px;
   }
 }
+
 .nav-link {
   padding-bottom: 4px;
-  background: linear-gradient(currentColor 0 0) left var(--p, 50%) bottom 0 /
-      var(--d, 10%) 2px no-repeat,
-    linear-gradient(currentColor 0 0) right var(--p, 50%) bottom 0 /
-      var(--d, 10%) 2px no-repeat;
-  transition: 0.3s, background-position 0.3s 0.3s;
-
+  background: linear-gradient(currentColor 0 0) var(--p, 0) 100% / var(--d, 0)
+    2px no-repeat;
+  transition: 0.3s, background-position 0s 0.3s;
   &:hover {
     --d: 100%;
     --p: 100%;
-    transition: 0.3s, background-size 0.3s 0.3s;
   }
 }
 
@@ -72,6 +69,7 @@ nav {
       width: 100%;
     }
   }
+
   .nav-link {
     background: none;
   }

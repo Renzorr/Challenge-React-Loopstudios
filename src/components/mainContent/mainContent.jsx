@@ -13,13 +13,13 @@ export default function Maincontent() {
       className="container"
     >
       <motion.img
-        variants={fadeIn("right", "tween", 0.2, 1)}
+        variants={fadeIn("down", "tween", 0.2, 1)}
         src={Img}
         alt="a man wearing vr head"
       />
 
       <motion.div
-        variants={fadeIn("left", "tween", 0.2, 1)}
+        variants={fadeIn("up", "tween", 0.2, 1)}
         className="main-content"
       >
         <h2>The leader in interactive VR</h2>

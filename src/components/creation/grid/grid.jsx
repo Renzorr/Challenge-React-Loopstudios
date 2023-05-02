@@ -19,7 +19,7 @@ import MakeImg from "../../../../images/desktop/image-fisheye.jpg";
 import MakeMobile from "../../../../images/mobile/image-fisheye.jpg";
 
 import { motion } from "framer-motion";
-import { slideIn } from "../../../../utils/motion";
+import { fadeIn } from "../../../../utils/motion";
 
 const galleryObj = [
   {
@@ -78,7 +78,7 @@ function Desktop() {
       {galleryObj.map((e) => {
         return (
           <motion.div
-            variants={slideIn("up", "tween", 0.2, 1)}
+            variants={fadeIn("right", "tween", 0, 1)}
             className="cart"
             key={e.id}
           >
@@ -97,7 +97,7 @@ function Mobile() {
       {galleryObj.map((e) => {
         return (
           <motion.div
-            variants={slideIn("up", "tween", 0.2, 1)}
+            variants={fadeIn("right", "tween", 0, 1)}
             className="cart"
             key={e.id}
           >

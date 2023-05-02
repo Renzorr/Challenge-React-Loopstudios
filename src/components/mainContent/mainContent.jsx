@@ -14,6 +14,7 @@ export default function Maincontent() {
     >
       <motion.img
         variants={fadeIn("down", "tween", 0.2, 1)}
+        className="img-main-content"
         src={Img}
         alt="a man wearing vr head"
       />

@@ -1,9 +1,10 @@
 .blinder-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 100vh;
   display: flex;
+  z-index: 999;
 }
 
 .blinder {
@@ -11,5 +12,4 @@
   height: 100vh;
   flex: 1;
   transform-origin: top;
-  z-index: 999;
 }

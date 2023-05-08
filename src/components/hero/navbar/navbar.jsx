@@ -22,9 +22,12 @@ export default function Navbar() {
     >
       <img src={Logo} alt="logo" className="logo" />
       <ul className={open}>
-        <button onClick={navToggle} className="close">
-          <img src={closeMenu} alt="close menu icon" />
-        </button>
+        <div className="top-mobile">
+          <img src={Logo} alt="logo" className="logo-mobile" />
+          <button onClick={navToggle} className="close">
+            <img src={closeMenu} alt="close menu icon" />
+          </button>
+        </div>
         <li>
           <a href="#" className="nav-link">
             About
